@@ -1,7 +1,10 @@
 import { Link, Outlet } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top" >
@@ -21,13 +24,21 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact">Contact Us</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/carosuel">Carosuel</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/video">VideoSection</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/singUp">Sign Up</Link>
+                            </li>
 
                         </ul>
-                        <ul >
-                            <li >
-                                <button type="button" className="btn btn-dark" >Dark</button>
-                            </li>
-                        </ul>
+                        <div className={`form-check form-switch m-2 text-${props.theme === 'light' ? 'dark' : 'light'} `}>
+                            <input className="form-check-input" onClick={props.changeTheme} type="checkbox" id="flexSwitchCheckDefault" />
+                            <label className={`form-check-label text-${!props.theme == 'light' ? 'dark' : 'light'}`} htmlFor="flexSwitchCheckDefault">{props.theme}</label>
+                        </div>
                     </div>
                 </div>
             </nav>

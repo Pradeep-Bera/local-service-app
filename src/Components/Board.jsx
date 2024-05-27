@@ -1,6 +1,6 @@
 // import carwash from '../assets/car wash1.jpg'
 
-const Newsboard = () => {
+const Board = () => {
 
     return (
         <div className="col-6 mx-auto">
@@ -29,4 +29,4 @@ const Newsboard = () => {
     )
 }
 
-export default Newsboard
+export default Board

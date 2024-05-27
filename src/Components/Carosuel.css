@@ -1,0 +1,11 @@
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: Add background for better readability */
+    padding: 1rem;
+    border-radius: 0.5rem;
+}

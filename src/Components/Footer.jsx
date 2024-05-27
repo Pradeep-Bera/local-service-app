@@ -4,8 +4,9 @@ import { Link, Outlet } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="bg-dark text-white py-4 mt-auto">
+        <>
+            <Outlet />
+            <footer className="bg-dark text-white py-4 mt-auto" >
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
@@ -34,8 +35,8 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <Outlet />
-        </div>
+
+        </>
     )
 }
 
